@@ -1,14 +1,20 @@
 [tool.poetry]
-name = "face-reidentification"
+name = "face_reidentification"
 version = "0.1.0"
 description = ""
 authors = ["Koter Michal <s24569@pjwstk.edu.pl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
+my-package = { path = "./face_reidentification", develop = true }
 python = "^3.11"
+lightning = "^2.3.1"
+torchvision = "^0.18.1"
+numpy = "1.26.4"
+torch = "^2.3.1"
+jupyterlab = "^4.2.3"
 
 
 [build-system]
 requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+build-backend = "poetry.masonry.api"
