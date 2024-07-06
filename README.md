@@ -57,12 +57,12 @@ result = fr.verification(
 ### Use fine-tuned model
 
 ```python
-architecture = ["densenet", "googlenet", "resnet", "squeezenet", "vgg"]
+model = ["densenet", "googlenet", "resnet", "squeezenet", "vgg"]
 
-result = fr.use(
-    img1_path=img1_path,
-    img2_path=img1_path,
-    model_name=encoders[0],
+result = fr.process(
+   img1_path=img1_path,
+   img2_path=img1_path,
+   model_name=model[0],
 )
 ```
 
